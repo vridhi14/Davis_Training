@@ -1,0 +1,19 @@
+numbers = [5, 2, 8, 5, 10, 3, 5, 12, 15, 5, 7, 1, 5, 9, 14]
+print(f"Original list: {numbers}")
+
+user_number = int(input("Please enter a number to search and remove: "))
+
+# Find the index of the first occurrence
+first_occurrence_index = -1
+for i in range(len(numbers)):
+    if numbers[i] == user_number:
+        first_occurrence_index = i
+        break
+
+if first_occurrence_index == -1:
+    print(f"The number {user_number} was not found in the list.")
+else:
+    for i in range(len(numbers) - 1, -1, -1):
+        if numbers[i] == user_number and i != first_occurrence_index:
+            numbers.pop(i)
+    print(f"List after removing subsequent occurrences of {user_number}: {numbers}")
