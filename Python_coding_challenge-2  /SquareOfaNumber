@@ -1,0 +1,5 @@
+# Function to return square
+def square(n):
+    return n * n
+
+print(square(5))
