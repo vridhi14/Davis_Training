@@ -1,0 +1,12 @@
+# Function to check palindrome string
+def is_palindrome_string(s):
+    if s == s[::-1]:   # reverse string using slicing
+        return "Yes"
+    else:
+        return "No"
+
+# Input
+text = "madam"
+
+# Output
+print(is_palindrome_string(text))
