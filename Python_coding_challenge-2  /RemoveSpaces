@@ -1,0 +1,15 @@
+# Function to remove spaces
+def remove_spaces(s):
+    result = ""
+    
+    for ch in s:
+        if ch != " ":   # skip spaces
+            result += ch
+    
+    return result
+
+# Input
+text = "hello world"
+
+# Output
+print(remove_spaces(text))
