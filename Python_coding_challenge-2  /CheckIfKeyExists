@@ -1,0 +1,8 @@
+# Check if key exists
+data = {"a":1, "b":2}
+key = "a"
+
+if key in data:
+    print("Yes")
+else:
+    print("No")
