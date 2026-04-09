@@ -1,0 +1,17 @@
+# Function to convert to uppercase without using upper()
+def to_uppercase(s):
+    result = ""
+    
+    for ch in s:
+        if 'a' <= ch <= 'z':   # check lowercase
+            result += chr(ord(ch) - 32)   # convert to uppercase
+        else:
+            result += ch
+    
+    return result
+
+# Input
+text = "abc"
+
+# Output
+print(to_uppercase(text))
