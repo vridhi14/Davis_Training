@@ -1,0 +1,15 @@
+# Function to count vowels
+def count_vowels(s):
+    count = 0
+    
+    for ch in s:
+        if ch.lower() in "aeiou":   # check vowel
+            count += 1
+    
+    return count
+
+# Input
+text = "hello"
+
+# Output
+print("Vowels:", count_vowels(text))
