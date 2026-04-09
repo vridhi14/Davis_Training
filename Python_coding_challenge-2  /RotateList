@@ -1,0 +1,5 @@
+# Rotate list by 1 position
+def rotate(lst):
+    return [lst[-1]] + lst[:-1]
+
+print(rotate([1,2,3]))
