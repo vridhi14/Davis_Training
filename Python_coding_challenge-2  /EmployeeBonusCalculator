@@ -1,0 +1,8 @@
+# Take salary input from user
+salary = int(input("Enter salary: "))
+
+# Calculate bonus (7% of salary)
+bonus = salary * 0.07
+
+# Display the result
+print("Bonus =", int(bonus))
