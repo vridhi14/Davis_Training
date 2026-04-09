@@ -1,17 +1,16 @@
-# Function to sort list (Bubble Sort)
-def sort_list(lst):
-    n = len(lst)
-    
+# Function to sort list
+def sort_list(list):
+    n = len(list)
     for i in range(n):
         for j in range(0, n-i-1):
             if lst[j] > lst[j+1]:
-                # swap
+                #Swapping these numbers 
                 lst[j], lst[j+1] = lst[j+1], lst[j]
     
-    return lst
+    return list
 
-# Input
+#Input 
 numbers = [3,1,2]
 
-# Output
+#Output
 print(sort_list(numbers))
