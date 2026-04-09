@@ -1,0 +1,13 @@
+def reverse_number(num):
+    reversed_num = 0
+    
+    while num > 0:
+        digit = num % 10          # get last digit
+        reversed_num = reversed_num * 10 + digit
+        num = num // 10           # remove last digit
+    
+    return reversed_num
+#input
+num = 1234
+# Output
+print("Reversed Number:", reverse_number(num))
