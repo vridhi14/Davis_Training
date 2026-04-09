@@ -1,0 +1,11 @@
+#creating a function in file1.py and importing this file in another main.py file 
+
+# file1.py
+def add(a, b):
+    return a + b
+#--------------------------------
+
+# main.py
+import file1
+
+print(file1.add(2,3))
