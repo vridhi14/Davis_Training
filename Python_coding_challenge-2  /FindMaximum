@@ -1,0 +1,15 @@
+# Function to find maximum without using max()
+def find_max(lst):
+    maximum = lst[0]   # assume first element is max
+    
+    for num in lst:
+        if num > maximum:
+            maximum = num   # update max
+    
+    return maximum
+
+# Input
+numbers = [5, 8, 2]
+
+# Output
+print("Maximum value:", find_max(numbers))
