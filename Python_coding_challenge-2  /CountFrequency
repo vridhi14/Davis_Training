@@ -1,8 +1,8 @@
-# Count frequency
-def frequency(lst):
+# Function to Count frequency
+def frequency(list):
     freq = {}
     
-    for num in lst:
+    for num in list:
         if num in freq:
             freq[num] += 1
         else:
@@ -10,4 +10,5 @@ def frequency(lst):
     
     return freq
 
+#Calling The Count Frequency Function 
 print(frequency([1,2,2,3]))
