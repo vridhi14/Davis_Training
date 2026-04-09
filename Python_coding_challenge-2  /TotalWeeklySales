@@ -1,0 +1,6 @@
+#fucntion to calculate total sales 
+def total_sales(sales_list):
+    total = sum(sales_list)  # sum() adds all elements of list
+    return total
+sales = [100, 200, 150, 300, 250, 400, 100]
+print("Total Weekly Sales:", total_sales(sales))
