@@ -1,0 +1,13 @@
+# Count frequency
+def frequency(lst):
+    freq = {}
+    
+    for num in lst:
+        if num in freq:
+            freq[num] += 1
+        else:
+            freq[num] = 1
+    
+    return freq
+
+print(frequency([1,2,2,3]))
