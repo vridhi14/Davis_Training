@@ -1,0 +1,15 @@
+# Function to count unique elements
+def count_unique(lst):
+    unique = []
+    
+    for item in lst:
+        if item not in unique:
+            unique.append(item)
+    
+    return len(unique)
+
+# Input
+numbers = [1,1,2,3,3]
+
+# Output
+print(count_unique(numbers))
