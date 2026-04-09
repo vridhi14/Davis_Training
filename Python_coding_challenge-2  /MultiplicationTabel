@@ -1,0 +1,10 @@
+# Function to print multiplication table
+def multiplication_table(n):
+    for i in range(1, 11):
+        print(n * i, end=" ")
+
+# Input
+num = 3
+
+# Output
+multiplication_table(num)
