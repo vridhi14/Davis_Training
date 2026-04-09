@@ -1,0 +1,15 @@
+# Function to remove duplicates
+def remove_duplicates(lst):
+    result = []
+    
+    for item in lst:
+        if item not in result:
+            result.append(item)
+    
+    return result
+
+# Input
+numbers = [1,1,2,3]
+
+# Output
+print(remove_duplicates(numbers))
