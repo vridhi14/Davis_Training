@@ -1,0 +1,10 @@
+# Function to count words
+def count_words(s):
+    words = s.split()
+    return len(words)
+
+# Input
+text = "Python is great"
+
+# Output
+print(count_words(text))
