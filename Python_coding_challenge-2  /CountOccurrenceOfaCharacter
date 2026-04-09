@@ -1,0 +1,16 @@
+# Function to count occurrences of a character
+def count_char(s, target):
+    count = 0
+    
+    for ch in s:
+        if ch == target:
+            count += 1
+    
+    return count
+
+# Input
+text = "banana"
+char = "a"
+
+# Output
+print("Count:", count_char(text, char))
