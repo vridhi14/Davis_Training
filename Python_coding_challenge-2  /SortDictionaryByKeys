@@ -1,0 +1,6 @@
+# Sort dictionary by keys
+data = {"b":2, "a":1}
+
+sorted_data = dict(sorted(data.items()))
+
+print(sorted_data)
