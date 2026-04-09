@@ -1,0 +1,10 @@
+char = input("Enter a character: ")
+
+# Convert to lowercase for uniformity
+char = char.lower()
+
+# Check if vowel
+if char in ['a', 'e', 'i', 'o', 'u']:
+    print("Vowel")
+else:
+    print("Consonant")
