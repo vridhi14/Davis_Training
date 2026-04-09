@@ -1,0 +1,7 @@
+# Merge two dictionaries
+a = {"a":1}
+b = {"b":2}
+
+result = {**a, **b}
+
+print(result)
