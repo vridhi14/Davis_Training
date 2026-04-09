@@ -1,0 +1,18 @@
+# Function to find duplicate characters
+def find_duplicates(s):
+    seen = []
+    duplicates = []
+    
+    for ch in s:
+        if ch in seen and ch not in duplicates:
+            duplicates.append(ch)
+        else:
+            seen.append(ch)
+    
+    return " ".join(duplicates)
+
+# Input
+text = "programming"
+
+# Output
+print(find_duplicates(text))
