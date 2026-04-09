@@ -1,0 +1,12 @@
+def count_greater_than_50(lst):
+    count = 0
+    for num in lst:
+        if num > 50:   # condition check
+            count += 1
+    return count
+
+# Input
+numbers = [10, 60, 30, 80]
+
+# Output
+print("Count:", count_greater_than_50(numbers))
