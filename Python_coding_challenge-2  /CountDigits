@@ -1,0 +1,15 @@
+# Function to count digits
+def count_digits(num):
+    count = 0
+    
+    while num > 0:
+        count += 1
+        num = num // 10   # remove last digit
+    
+    return count
+
+# Input
+num = 45678
+
+# Output
+print("Number of digits:", count_digits(num))
