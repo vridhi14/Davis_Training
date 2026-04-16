@@ -1,0 +1,7 @@
+with open("input.txt", "r") as f:
+    lines = f.readlines()
+
+lines.reverse()
+
+with open("output.txt", "w") as out:
+    out.writelines(lines)
