@@ -1,0 +1,21 @@
+# Program to copy content from one file to another
+
+# Step 1: Take file names from user
+source = input("Enter source file name: ")
+destination = input("Enter destination file name: ")
+
+try:
+    # Step 2: Open source file in read mode
+    with open(source, 'r') as src_file:
+        content = src_file.read()   # Read content
+
+    # Step 3: Open destination file in write mode
+    with open(destination, 'w') as dest_file:
+        dest_file.write(content)   # Write content
+
+    print("File copied successfully!")
+
+except FileNotFoundError:
+    print("Source file not found!")
+except Exception as e:
+    print("Error:", e)
