@@ -1,0 +1,10 @@
+import re
+
+with open("data.txt", "r") as f:
+    content = f.read()
+
+emails = re.findall(r'\b[\w\.-]+@[\w\.-]+\.\w+\b', content)
+
+with open("emails.txt", "w") as out:
+    for email in emails:
+        out.write(email + "\n")
