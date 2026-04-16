@@ -1,0 +1,27 @@
+#Algorithm
+# 1 Start
+# 2 Open file article.txt in read mode
+# 3 Read content and convert to lowercase
+# 4 Remove punctuation
+# 5 Split text into words
+# 6 Count frequency using dictionary
+# 7 Display each word with its count
+# 8 Stop
+
+import string
+
+with open("article.txt", "r") as f:
+    text = f.read().lower()
+
+# remove punctuation
+for ch in string.punctuation:
+    text = text.replace(ch, "")
+
+words = text.split()
+freq = {}
+
+for word in words:
+    freq[word] = freq.get(word, 0) + 1
+
+for word, count in freq.items():
+    print(word, ":", count)

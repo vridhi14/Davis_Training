@@ -1,0 +1,18 @@
+#Algorithm
+# 1 Start
+# 2 Open input file in read mode
+# 3 Create empty set seen
+# 4 Open output file in write mode
+# 5 Read each line from input
+# 6 If line not in seen, write it to output
+# 7 Add line to seen
+# 8 Stop
+
+
+seen = set()
+
+with open("input.txt", "r") as f, open("output.txt", "w") as out:
+    for line in f:
+        if line not in seen:
+            out.write(line)
+            seen.add(line)

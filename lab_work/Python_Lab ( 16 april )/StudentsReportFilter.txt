@@ -1,0 +1,17 @@
+# open original file in read mode
+with open("students.txt", "r") as file:
+    lines = file.readlines()
+
+# open new file in write mode
+with open("newfile.txt", "w") as newfile:
+    for line in lines:
+        data = line.strip().split(",")   # split by comma
+        
+        name = data[0]
+        marks = int(data[1])
+        sub = data[2]
+        
+        if marks > 75:
+            newfile.write(line)
+            
+print("Data written successfully!")
