@@ -1,3 +1,12 @@
+# Algorithm:
+
+# 1 Start
+# 2 Open file in read mode
+# 3 Read all lines
+# 4 Find line with maximum length
+# 5 Display that line and its length
+# 6 Stop
+
 with open("input.txt", "r") as f:
     lines = f.readlines()
 
